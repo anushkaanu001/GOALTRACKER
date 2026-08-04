@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+
+    android:padding="8dp"
+
+    android:gravity="end">
+
+    <LinearLayout
+
+        android:layout_width="290dp"
+
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+
+        android:background="@drawable/chat_window">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="38dp"
+
+            android:background="#FF92D3"
+
+            android:gravity="center_vertical"
+
+            android:paddingHorizontal="12dp">
+
+            <TextView
+
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:text="YOU.EXE"
+
+                android:textStyle="bold"
+
+                android:textColor="#44203D"/>
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/red_circle"/>
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/yellow_circle"/>
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/green_circle"/>
+
+        </LinearLayout>
+
+        <TextView
+
+            android:id="@+id/userMessage"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:padding="15dp"
+
+            android:textSize="18sp"
+
+            android:textColor="#202020"/>
+
+    </LinearLayout>
+
+</LinearLayout>

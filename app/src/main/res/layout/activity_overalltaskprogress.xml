@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- ================= GOAL PROGRESS ================= -->
+
+    <!-- Goal Progress Card -->
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardGoalProgress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="#EAB5E6"
+        app:cardCornerRadius="0dp"
+        app:strokeColor="#414141"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/gradient2"
+            android:orientation="vertical">
+
+            <!-- Title -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button01"
+                android:paddingLeft="5dp"
+                android:text="Overall Task Completion"
+                android:textColor="#430C83"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- Circle -->
+
+            <FrameLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp">
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:id="@+id/goalProgress"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:indeterminate="false"
+                    android:max="100"
+                    android:progress="60"
+                    app:indicatorColor="#5E3285"
+                    app:indicatorSize="140dp"
+                    app:trackColor="#AD8FC9"
+                    app:trackThickness="20dp" />
+
+                <TextView
+                    android:id="@+id/txtGoalPercent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="69%"
+                    android:textColor="#641F85"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+            </FrameLayout>
+
+            <!-- Count -->
+
+            <!-- Message -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="clip_horizontal"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/txtGoalCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:text="124/ 180 Goals"
+                    android:textColor="#6D2AA8"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtGoalMessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Keep Going 🚀"
+                    android:textColor="#502575"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

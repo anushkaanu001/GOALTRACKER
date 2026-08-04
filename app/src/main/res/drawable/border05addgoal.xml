@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer Border -->
+    <item>
+        <shape>
+            <solid android:color="#C1C1C1"/>
+            <stroke
+                android:width="2dp"
+                android:color="#414141"/>
+        </shape>
+    </item>
+
+    <!-- Inner Border -->
+    <item
+        android:left="5dp"
+        android:top="56dp"
+        android:right="5dp"
+        android:bottom="5dp">
+
+        <shape>
+            <solid android:color="#EAB5E6"/>
+            <stroke
+                android:width="2dp"
+                android:color="#414141"/>
+        </shape>
+    </item>
+
+    <!-- Title Bar -->
+    <item
+        android:left="5dp"
+        android:top="5dp"
+        android:right="5dp"
+        android:bottom="475dp">
+
+        <shape>
+            <solid android:color="#B43BD4"/>
+            <stroke
+                android:width="2dp"
+                android:color="#414141"/>
+        </shape>
+    </item>
+
+</layer-list>

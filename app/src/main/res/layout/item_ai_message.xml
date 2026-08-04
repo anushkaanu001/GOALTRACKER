@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:orientation="horizontal">
+
+    <!-- AI Avatar -->
+
+    <ImageView
+        android:id="@+id/aiAvatar"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="10dp"/>
+
+    <!-- Chat Window -->
+
+    <LinearLayout
+
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+
+        android:layout_weight="1"
+
+        android:orientation="vertical"
+
+        android:background="@drawable/chat_window">
+
+        <!-- Window Title -->
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+
+            android:background="#A58CFF"
+
+            android:gravity="center_vertical"
+
+            android:paddingHorizontal="12dp">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:text="GOALBOT.EXE"
+
+                android:textStyle="bold"
+
+                android:textColor="#1E184B"
+
+                android:textSize="15sp"/>
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/red_circle"/>
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/yellow_circle"/>
+
+            <View
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/green_circle"/>
+
+        </LinearLayout>
+
+        <!-- Message -->
+
+        <TextView
+
+            android:id="@+id/aiMessage"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="15dp"
+
+            android:textColor="#202020"
+
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

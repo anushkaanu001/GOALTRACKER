@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardPriorityCompletion"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="0dp"
+    app:strokeColor="#360B41"
+    app:strokeWidth="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient2"
+        android:orientation="vertical">
+
+        <!-- Header -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button01"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" Priority Completion"
+                android:textColor="#8E24AA"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- Horizontal Bar Chart -->
+
+        <com.github.mikephil.charting.charts.HorizontalBarChart
+            android:id="@+id/priorityChart"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_margin="8dp" />
+
+        <!-- Statistics -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:id="@+id/txtFiveStar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="★★★★★   16 / 20 Completed (80%)"
+                android:textAlignment="center"
+                android:textColor="#FFD54F"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtFourStar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="★★★★☆   11 / 15 Completed (73%)"
+                android:textAlignment="center"
+                android:textColor="#FFC107"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtThreeStar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="★★★☆☆   8 / 12 Completed (67%)"
+                android:textAlignment="center"
+                android:textColor="#FF9800"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtTwoStar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="★★☆☆☆   7 / 8 Completed (87%)"
+                android:textAlignment="center"
+                android:textColor="#8BC34A"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtOneStar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="★☆☆☆☆   10 / 10 Completed (100%)"
+                android:textAlignment="center"
+                android:textColor="#4CAF50"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- Best Performing -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Best Priority"
+                    android:textColor="#8E24AA"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtBestPriority"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="★★★★★"
+                    android:textColor="#FFD54F"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="Needs Focus"
+                    android:textColor="#8E24AA"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/txtNeedsFocus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:text="★★★☆☆"
+                    android:textColor="#FF7043"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- AI Insight -->
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardCornerRadius="0dp"
+            app:strokeColor="#8E24AA"
+            app:strokeWidth="1dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/txtPriorityInsight"
+                    android:layout_width="351dp"
+                    android:layout_height="56dp"
+                    android:layout_weight="1"
+                    android:text="You're doing well with 5-star tasks. Try improving completion of 3-star tasks to maintain balanced productivity."
+                    android:textColor="#635B5B"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
